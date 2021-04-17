@@ -1,0 +1,258 @@
+@media only screen and (max-width: 375px){
+    body{
+        background-color: hsl(210, 46%, 95%);
+        font-family: 'Manrope', sans-serif;
+        display: flex;
+        justify-content: center;
+        padding-top:60px;
+        padding-bottom:60px ;
+    }
+    .container{
+        width: 85vw;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.089);
+    }
+    .image{
+        width: 85vw;
+        height: 210px;
+        background-size: cover;
+        background-image: url("drawers.jpg");
+    }
+    .text{
+        padding-left:30px;
+        padding-right:33px;
+    }
+    .head{
+        padding-top:20px;
+        font-weight:bold;
+        color:hsl(217, 19%, 35%);
+    }
+    .body{
+        font-size:13px;
+        color:hsl(214, 17%, 51%);
+    }
+    .profile{
+        font-size: 13px;
+        display:flex;
+        padding:20px 33px 15px 30px;
+        
+    }
+    .profileimg{
+        width: 40px;
+        height: 40px;
+        background-image:url("avatar-michelle.jpg");
+        background-size:cover;
+        clip-path: circle(50% at 50% 50%);
+    }
+    .status{
+        margin: 0px 15px;
+    
+    }
+    .name{
+        font-weight: bold;
+        color:hsl(217, 19%, 35%);
+        margin:1px 0px;
+    }
+    
+    .date{
+        margin:1px 0px;
+        color: hsl(212, 23%, 69%);
+    }
+    button{
+        margin-left: auto;
+        margin-top:5px;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        outline: none;
+        border:none;    
+        background-color: hsl(210, 46%, 95%);
+        background-image: url("icon-share.svg");
+        background-repeat:no-repeat;
+        background-size: 13px;
+        background-position-y: center;
+        background-position-x: center; 
+    }
+    #pop{
+        position: absolute;
+        width: 85vw;
+        bottom:-10px;
+        height: 60px;
+        background-color: hsl(217, 19%, 35%);
+        display: flex;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s;
+    }
+    .share{
+        margin-top:20px;
+        margin-left:30px;
+        letter-spacing: 5px;
+        font-size: 13px;
+        color:hsl(212, 23%, 69%);
+    }
+    .social{
+        width: 20px;
+        height: 20px;
+        padding-top:20px;
+        padding:20px 8px 20px 8px;
+        
+    }
+    .icons{
+        margin-left: 5px;;
+    }
+    #btn_close_share{
+        margin-left: 40px;
+        margin-top:14px;
+        background-color:hsl(214, 17%, 51%);
+        background-image: none;
+    }
+    svg{
+        fill: black;
+    }
+    #pop.active{
+        visibility: visible;
+        bottom:0px;
+        opacity: 1;
+    }
+    }
+
+@media only screen and (max-width: 1440px){
+    body{
+        background-color: hsl(210, 46%, 95%);
+        font-family: 'Manrope', sans-serif;
+        display: flex;
+        justify-content: center;
+        margin-top:28vh ;
+    }
+    .container{
+        width: 49vw;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.089);
+        display: flex;
+    }
+    .image{
+        width: 52vw;
+        height: 280px;
+        background-size: cover;
+        background-image: url("drawers.jpg");
+    }
+    .text{
+        padding-left:30px;
+        padding-right:33px;
+    }
+    .head{
+        padding-top:10px;
+        font-weight:700;
+        font-size:20px;
+        color:hsl(217, 19%, 35%);
+    }
+    .body{
+        font-size:13px;
+        color:hsl(214, 17%, 51%);
+    }
+    .profile{
+        font-size: 13px;
+        display:flex;
+        padding:20px 33px 15px 30px;
+        
+    }
+    .profileimg{
+        width: 40px;
+        height: 40px;
+        background-image:url("avatar-michelle.jpg");
+        background-size:cover;
+        clip-path: circle(50% at 50% 50%);
+    }
+    .status{
+        margin: 0px 15px;
+    
+    }
+    .name{
+        font-weight: bold;
+        color:hsl(217, 19%, 35%);
+        margin:1px 0px;
+    }
+    
+    .date{
+        margin:1px 0px;
+        color: hsl(212, 23%, 69%);
+    }
+    #btn_share{
+        margin-left: auto;
+        margin-top:5px;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        outline: none;
+        border:none;    
+        background-color: hsl(210, 46%, 95%);
+        background-image: url("icon-share.svg");
+        background-repeat:no-repeat;
+        background-size: 13px;
+        background-position-y: center;
+        background-position-x: center; 
+    }
+    #pop{
+        position: absolute;
+        width: 16vw;
+        bottom:320px;
+        left:895px;
+        height: 55px;
+        background-color: hsl(217, 19%, 35%);
+        display: flex;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s;
+        padding-left: 40px;
+        border-radius: 10px;
+        z-index: 3;
+        box-shadow: 0px 1px 10px  hsla(217, 19%, 35%, 0.411);
+    }
+    #pop::after{
+        content: " ";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 20px 15px 0 15px;
+        border-color: hsl(217, 19%, 35%) transparent transparent transparent;  
+        position: absolute;
+        top:50px;
+        left:115px;
+        z-index: 5;
+    }
+    .share{
+        letter-spacing: 5px;
+        font-size: 13px;
+        color:hsl(212, 23%, 69%);
+        padding-right: 5px;
+        margin-top: 17px;
+    }
+    .social{
+        margin-top:10px ;
+        width: 20px;
+        height: 20px;
+        padding: 7px;
+    }
+    .icons{
+        height: 90px;
+        width: 170px;
+    }
+    #btn_close_share{
+        visibility: hidden;
+        position: absolute;
+    }
+    svg{
+        fill: black;
+    }
+    #pop.active{
+        visibility: visible;
+        bottom:330px;
+        opacity: 1;
+    }
+    }
